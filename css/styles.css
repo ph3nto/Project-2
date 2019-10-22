@@ -1,0 +1,164 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+	color: #441212;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+.name,
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+ 
+.portfolio {
+	margin-bottom: 50px;
+	font-size: 40px;
+}
+
+.col {
+	padding: 30px;
+	border-bottom: 1px solid black;
+}
+
+.contact h3 {
+	font-size: 30px;
+}
+
+.main-nav a {
+	font-size: .95em;
+	color: #171970;
+	text-transform: uppercase;
+}
+
+.main-nav a:hover {
+	color: #c0a114;
+}
+
+/* ---- Layout Containers ---- */
+
+.intro,
+.main-header {
+	color: #fff;
+	background: #3acec2;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.intro, 
+.main-footer,
+.contact,
+.col,
+.portfolio {
+	text-align: center;
+}
+.col {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.main-footer, .contact {
+	background: #366b88;
+	padding: 2em 0;
+}
+
+/* ---- Page Elements ---- */
+.contact {
+	padding-top: 1em;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {
+
+ 
+	.col {
+		float: left;
+	}
+	.article-1,
+	.article-2 {
+		width: 50%;
+	}
+	.article-3,
+	.article-4 {
+		width: 50%;
+	}
+	.article-5,
+	.article-6 {
+		width: 50%;
+	}
+	.contact {
+		width: 100%;
+	}
+
+
+
+	/* ---- Float clearfix ---- */
+
+	.container::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
+@media (min-width: 1024px) {
+
+	.col {
+		float: left;
+	}
+
+	.article-1,
+	.article-2,
+	.article-3 {
+	  width: 33%;
+	}
+	
+	.article-4,
+	.article-5, 
+	.article-6 {
+	  width: 33%;
+	}
+	.contact {
+		width: 100%;
+	}
+	
+		/* ---- Float clearfix ---- */
+	
+		.container::after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+	
+	}
