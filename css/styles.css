@@ -6,6 +6,9 @@
 body {
 	font-family: 'Oswald', sans-serif;
 	color: #441212;
+	width: 90%;
+	margin: auto;
+	max-width: 1024px;
 }
 
 
@@ -25,6 +28,13 @@ img {
 
 .name,
 .main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+}
+
+.name-bottom,
+.bottom-nav a {
 	text-align: center;
 	display: block;
 	padding: 10px 15px;
@@ -54,14 +64,12 @@ img {
 	font-size: 30px;
 }
 
-.intro,
-.main-header {
+.intro {
 	color: #fff;
 	background: #3acec2;
-	padding: 3.2em 0;
+	padding: 2em;
 	margin-bottom: 60px;
-	padding-top: .5em;
-	padding-bottom: .5em;
+	
 }
 
 .main-header,
@@ -79,11 +87,34 @@ img {
 
 .main-footer, .contact {
 	background: #366b88;
-	padding: 2em 0;
+	padding: 1em 0;
 }
 
 .contact {
 	padding-top: 1em;
+}
+.name-bottom {
+	float: left;
+	padding-left: 1em;
+}
+
+.back-to-top {
+	float: right;
+	padding-right: 1em;
+}
+
+.bottom-nav {
+	display: none;
+}
+.main-footer {
+	border-top: 1px solid black;
+}
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
 }
 
 /* ================================= 
@@ -92,12 +123,16 @@ img {
 
 @media (min-width: 768px) {
 
+	body {
+		width: 70%;
+		margin: auto;
+	}
 	.main-nav li {
 		display: inline-block;
 	}
 	.profile-img {
 		float: right;
-		width;: 30%;
+		width: 40%;
 		padding: 30px;
 	}
 	.intro p {
@@ -108,26 +143,24 @@ img {
 	}
 	.name-bottom {
 		float: left;
-		padding: 10px;
-		font-size: 30px;
 	}
 
 	.bottom-nav {
 		float: right;
-		padding: 20px;
-		font-size: 20px;
-	}
+		display: contents;
 
+	}
+	
 	.bottom-nav li {
-		float: left;
 		display: inline-block;
-		margin-left: 5px;
+	}
 
+	.back-to-top {
+		display: none;
 	}
-	.main-footer {
-		border-top: 1px solid black;
-	}
-	}
+
+	
+	
 	.col {
 		float: left;
 	}
@@ -151,18 +184,14 @@ img {
 		width: 100%;
 	}
 
-	/* ---- Float clearfix ---- */
-
-	.container::after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-
 }
 @media (min-width: 1024px) {
 
-	
+	body {
+		width: 70%;
+		margin: auto;
+	}
+
 	.name {
 		float: left;
 	}
@@ -171,10 +200,15 @@ img {
 		float: right;
 	}
 
-	.main-nav li {
+	.name-bottom {
 		float: left;
 	}
 
+	.bottom-nav {
+		float: right;
+		display: contents;
+	}
+	
 	.col {
 		float: left;
 	}
@@ -197,13 +231,5 @@ img {
 	.contact {
 		width: 100%;
 	}
-	
-		/* ---- Float clearfix ---- */
-	
-		.container::after {
-			content: " ";
-			display: table;
-			clear: both;
-		}
 	
 	}
