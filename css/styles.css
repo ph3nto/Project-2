@@ -24,11 +24,20 @@ img {
 	box-shadow: 0 1px 4px rgba(0,0,0,.4);
 	width: 100%;
 	top: 0;
-	background: rgb(241, 154, 241);
+	background: rgb(154, 241, 193);
 	margin: auto;
 }
 
-
+.box2,
+.goals,
+.contact {
+	background: #e3dafa;
+}
+.box2 p {
+	width: 100%;
+	height: 70px;
+	font-size: 18px;
+} 
 .name {
 	font-size: 2.25em;
 	margin: 0;
@@ -60,7 +69,7 @@ img {
 
 
 .portfolio {
-	margin-bottom: 50px;
+	padding-top: 50px;
 	font-size: 40px;
 }
 
@@ -71,6 +80,7 @@ img {
 
 .contact h3 {
 	font-size: 30px;
+	margin: 0;
 }
 
 .intro {
@@ -81,7 +91,7 @@ img {
 	
 }
 .intro p {
-	font-size: 1.2em;
+	font-size: 20px;
 	padding-top: 10px;
 }
 
@@ -90,7 +100,8 @@ img {
 .main-footer,
 .contact,
 .col,
-.portfolio {
+.portfolio,
+.goals {
 	text-align: center;
 }
 .col {
@@ -99,11 +110,13 @@ img {
 }
 
 .main-footer {
-	background: rgb(241, 154, 241);
+	background: rgb(154, 241, 193);
+	box-shadow: 0 1px 4px rgba(0,0,0,.4);
 }
 
 .contact {
-	padding-bottom: 1em;
+	padding-bottom: 16px;
+	padding-top: 16px;
 }
 .name-bottom {
 	float: left;
@@ -118,9 +131,26 @@ img {
 .bottom-nav {
 	display: none;
 }
-.main-footer {
-	border-top: 1px solid black;
+
+.goals {
+	padding-bottom: 16px;
+	padding-top: 16px;
+	border-bottom: 1px solid black;
 }
+
+ul.skills {
+	padding: 0;
+	text-align: center;
+  }
+  
+  .skills li {
+	border-radius: 6px;
+	display: inline-block;
+	background: #ff9904;
+	color: white;
+	padding: 5px 10px;
+	margin: 2px;
+  }
 /* ---- Float clearfix ---- */
 
 .clearfix::after {
@@ -155,7 +185,7 @@ img {
 		font-size: 20px;
 		padding: 30px;
 		text-align: left;
-		font-size: 1.6em;
+		font-size: 25px;
 
 	}
 	.name-bottom {
@@ -164,7 +194,7 @@ img {
 
 	.bottom-nav {
 		float: right;
-		display: contents;
+		display: block;
 
 	}
 	
@@ -210,7 +240,7 @@ img {
 	}
 	.intro p {
 		width: 70%;
-		font-size: 2em;
+		font-size: 32px;
 		padding: 30px 200px 30px 100px;
 		text-align: left;
 	}
@@ -229,7 +259,7 @@ img {
 
 	.bottom-nav {
 		float: right;
-		display: contents;
+		display: block;
 	}
 	
 	.col {
@@ -239,17 +269,17 @@ img {
 	.article-1,
 	.article-2,
 	.article-3 {
-	  width: 33%;
-	  padding-left: 2em;
-	  padding-right: 2em;
+	  width: 33.33%;
+	  padding-left: 32px;
+	  padding-right: 32px;
 	}
 	
 	.article-4,
 	.article-5, 
 	.article-6 {
-	  width: 33%;
-	  padding-left: 2em;
-	  padding-right: 2em;
+	  width: 33.33%;
+	  padding-left: 32px;
+	  padding-right: 32px;
 	}
 	.contact {
 		width: 100%;
